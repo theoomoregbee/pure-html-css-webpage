@@ -50,7 +50,11 @@ section img.description {
     font-family: OpenSans;
 }
 
-.content > div {
+.content.bg-white, .content.bg-secondary {
+    color: #414042;
+}
+
+.content > div:first-child {
     margin-left: auto;
     margin-right: auto;
     width: 34%;
@@ -71,6 +75,11 @@ section img.description {
     font-family: 'Museo300-Regular';
 }
 
+.content h1 {
+    font-size: 65px;
+    font-family: 'Museo300-Regular';
+}
+
 a.nav {
     border-radius: 100%;
     padding: 11px;
@@ -79,9 +88,9 @@ a.nav {
     color: #ffffff;
     border: 3px solid #ffffff;
     font-size: 15px;
-    -webkit-box-shadow: 0px 5px 13px -1px rgba(102,99,102,0.39);
-    -moz-box-shadow: 0px 5px 13px -1px rgba(102,99,102,0.39);
-    box-shadow: 0px 5px 13px -1px rgba(102,99,102,0.39);
+    -webkit-box-shadow: 0px 5px 13px -1px rgba(102, 99, 102, 0.39);
+    -moz-box-shadow: 0px 5px 13px -1px rgba(102, 99, 102, 0.39);
+    box-shadow: 0px 5px 13px -1px rgba(102, 99, 102, 0.39);
 }
 
 p {
@@ -104,4 +113,119 @@ p {
     background-color: #f1f2f2;
 }
 
+.bg-white {
+    background-color: #ffffff;
+}
 
+/* grid and services */
+.container {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.service {
+    padding: 30px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.service > img {
+    height: 80px;
+    width: 80px;
+    margin-top: 30px;
+}
+
+.service h4 {
+    margin-top: 100px;
+    font-size: 20px;
+    white-space: nowrap;
+    margin-left: -20px;
+}
+
+div.row, [class*="col-"] {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/*contact form*/
+form input, form textarea {
+    padding: 15px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    box-sizing : border-box;
+}
+
+form button {
+    padding: 4px;
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 20px;
+    text-align: center;
+    border: 0px;
+    border-radius: 3px;
+    color: #f1f2f2;
+    font-family: OpenSans;
+}
