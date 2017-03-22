@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Museo300-Regular';
+    src: url('fonts/Museo300-Regular-webfont.woff2') format('woff2'),
+    url('fonts/Museo300-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.header {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #d83454 no-repeat center;
+    position: relative;
+    color: #ffffff;
+    padding-top: 20%;
+    font-family: 'Museo300-Regular';
+}
+
+.header > div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 34%;
+    font-size: 19px;
+}
+
+.header h2 {
+    font-size: 50px;
+}
+
+
+
+
+
