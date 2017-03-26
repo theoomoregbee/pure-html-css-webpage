@@ -103,10 +103,29 @@
 </section>
 
 
-<section class="content bg-secondary" id="stage6">
+<section class="content bg-secondary" id="stage6" style="height: 435px">
     <h1 align="center"> Clients</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div>
+                    <img src="images/photographer.fw.png" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div>
+                    <img src="images/vegan.fw.png" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div>
+                    <img src="images/pshr.fw.png" alt="">
+                </div>
+            </div>
 
-    <p align="center">
+        </div>
+    </div>
+    <p align="center" style="margin-top: 56px">
         <a href="#stage7" class="nav nav-alternate2">
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
         </a>
@@ -116,16 +135,59 @@
 <section class="content bg-secondary" id="stage7">
     <h1 align="center"> How to find us</h1>
 
-    <p align="center">
-        <a href="#stage8" class="nav">
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </a>
-    </p>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCg7IGGS4iFoaoUnf9sCnjXJ5AbiCnG5C4'></script>
+    <div id="map-container">
+        <div id='gmap_canvas'></div>
+        <style>
+            #gmap_canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 40% !important;
+            }
+
+            #map-container {
+                position: relative;
+                padding-bottom: 75%; /* 4:3 ratio*/
+                height: 0;
+                overflow: hidden;
+            }
+        </style>
+    </div>
+    <a href='https://www.embedmap.net/'>add google maps to website</a>
+    <script type='text/javascript'
+            src='https://embedmaps.com/google-maps-authorization/script.js?id=9148ec479a2569c23d33920de07ef74a672118b3'></script>
+    <script type='text/javascript'>function init_map() {
+        var myOptions = {
+            zoom: 12,
+            center: new google.maps.LatLng(51.5246185, -0.07249879999994846),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+        marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(51.5246185, -0.07249879999994846)
+        });
+        infowindow = new google.maps.InfoWindow({content: '<strong>Geek Label<br>4th Floor</strong><br>27-33 Bethnal Green Road<br> Shoreditch<br>London<br>E1 6LA<br>'});
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
+    }
+    google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
 </section>
 
 
 <section class="content bg-secondary" id="stage8">
+
     <div>
+        <p align="center" style="margin-top: 0px; margin-bottom: 130px;">
+            <a href="#stage8" class="nav nav-alternate2">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+        </p>
         <h1 align="center"> Contact</h1>
 
         <form action="">
