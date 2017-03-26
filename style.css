@@ -45,8 +45,8 @@ section img.description {
     background: no-repeat center;
     position: relative;
     color: #ffffff;
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 5px;
     font-family: OpenSans;
 }
 
@@ -93,8 +93,22 @@ a.nav {
     box-shadow: 0px 5px 13px -1px rgba(102, 99, 102, 0.39);
 }
 
+a.nav.nav-alternate {
+    background-color: #ffffff;
+    border-color: #000;
+    border-bottom-width: 2px;
+    color: #000;
+}
+
+a.nav.nav-alternate2 {
+    background-color: #f1f2f2;
+    border-color: #414042;
+    color: #000;
+    border-bottom-width: 2px;
+}
+
 p {
-    margin-top: 35px;
+    margin-top: 100px;
 }
 
 .bg-primary {
@@ -214,7 +228,7 @@ form input, form textarea {
     border-radius: 5px;
     margin-bottom: 15px;
     font-size: 15px;
-    box-sizing : border-box;
+    box-sizing: border-box;
 }
 
 form button {
