@@ -1,0 +1,26 @@
+{
+  "name": "pure-html-css",
+  "version": "1.0.0",
+  "description": "this is html/css demo site",
+  "main": "web.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theo4u/angular-music-search.git"
+  },
+  "author": "Theophilus O. Omoregbee <theo4u@ymail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theo4u/pure-html-css-webpage/issues"
+  },
+  "homepage": "https://github.com/theo4u/pure-html-css-webpage#readme",
+  "dependencies": {
+    "del": "^2.2.2",
+    "express": "^4.14.1",
+    "gulp-useref": "^3.1.2",
+    "gzippo": "^0.2.0",
+    "morgan": "^1.7.0"
+  }
+}
